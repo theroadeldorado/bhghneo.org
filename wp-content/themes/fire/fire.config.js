@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  PROXY_URL: 'http://localhost:10003/',
+  PROXY_URL: 'https://bhghneo.fire/',
   DEFAULT_PORT: 3000,
 
   ASSET_PATH: path.resolve(__dirname, './assets'),
