@@ -78,13 +78,10 @@
     .heading-1,
     .heading-2,
     .heading-3,
-    .kicker {
-      @apply mb-[50px] last:mb-0;
-    }
-
     .heading-4,
     .heading-5,
     .heading-6,
+    .kicker,
     .body-2xl,
     .body-xl,
     .body-lg,
