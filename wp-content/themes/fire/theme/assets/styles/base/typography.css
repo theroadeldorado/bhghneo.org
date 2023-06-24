@@ -13,4 +13,133 @@
   h6 {
     @apply font-body;
   }
+
+  .heading-1,
+  .heading-2,
+  .heading-3,
+  .heading-4,
+  .heading-5,
+  .heading-6 {
+    @apply font-bold leading-tight;
+  }
+
+  .heading-1 {
+    @apply text-3xl font-bold md:text-5xl;
+  }
+  .heading-2 {
+    @apply text-2xl font-bold md:text-4xl;
+  }
+  .heading-3 {
+    @apply text-xl font-bold md:text-3xl;
+  }
+  .heading-4 {
+    @apply text-lg font-bold md:text-2xl;
+  }
+  .heading-5 {
+    @apply text-base font-bold md:text-xl;
+  }
+  .heading-6 {
+    @apply text-sm font-bold md:text-lg;
+  }
+  .kicker {
+    @apply text-xs font-semibold text-orange-2 uppercase tracking-wider;
+  }
+
+  .body-xl {
+    @apply text-2xl leading-relaxed;
+  }
+  .body-lg {
+    @apply text-xl leading-relaxed;
+  }
+  .body-md {
+    @apply text-lg leading-relaxed;
+  }
+  .body-base {
+    @apply text-base leading-relaxed;
+  }
+
+  .prose {
+    @apply p-4 max-w-[1000px] mx-auto;
+  }
+
+  .prose,
+  .wizzy {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    div {
+      @apply mb-[25px] last:mb-0;
+    }
+
+    .heading-1,
+    .heading-2,
+    .heading-3,
+    .kicker {
+      @apply mb-[50px] last:mb-0;
+    }
+
+    .heading-4,
+    .heading-5,
+    .heading-6,
+    .body-2xl,
+    .body-xl,
+    .body-lg,
+    .body-md,
+    .body-base,
+    ul,
+    ol {
+      @apply mb-[25px] last:mb-0;
+    }
+
+    .button,
+    .button-white,
+    .button-blue,
+    .button-outline,
+    .button-white-outline,
+    .button-blue-outline {
+      @apply mb-[25px] last:mb-0 mt-[5px] md:mt-[25px];
+    }
+
+    a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline) {
+      @apply underline hover:no-underline decoration-1 underline-offset-1;
+    }
+
+    ul,
+    ol {
+      @apply mb-8 last:mb-0;
+    }
+    ul {
+      @apply pl-2 ml-4 list-disc;
+    }
+    ol {
+      @apply pl-2 ml-4 list-decimal;
+    }
+
+    .alignleft {
+      @apply float-left my-1 mr-4 text-left last:mb-0;
+    }
+    .alignright {
+      @apply float-right my-1 ml-4 text-right last:mb-0;
+    }
+    .aligncenter {
+      @apply mx-auto my-1 text-center last:mb-0;
+    }
+
+    img.alignleft,
+    img.alignright {
+      @apply max-w-[50%];
+    }
+
+    hr {
+      @apply bg-black h-px border-0 mb-[50px] mt-0 last:mb-0;
+    }
+
+    blockquote {
+      @apply border-l-4 border-orange-2 pl-4 mb-[50px] last:mb-0;
+    }
+  }
 }

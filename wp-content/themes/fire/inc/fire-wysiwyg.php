@@ -40,19 +40,84 @@
         'title' => 'Font Style Presets',
         'items' => array(
           array(
-            'title' => 'Example Preset',
+            'title' => 'Heading 1',
             'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
-            'classes' => 'test'
+            'classes' => 'heading-1'
+          ),
+          array(
+            'title' => 'Heading 2',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
+            'classes' => 'heading-2'
+          ),
+          array(
+            'title' => 'Heading 3',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
+            'classes' => 'heading-3'
+          ),
+          array(
+            'title' => 'Heading 4',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
+            'classes' => 'heading-4'
+          ),
+          array(
+            'title' => 'Heading 5',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
+            'classes' => 'heading-5'
+          ),
+          array(
+            'title' => 'Heading 6',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
+            'classes' => 'heading-6'
+          ),
+          array(
+            'title' => 'Kicker',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
+            'classes' => 'kicker'
+          ),
+          array(
+            'title' => 'Body xl',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span, blockquote',
+            'classes' => 'body-xl'
+          ),
+          array(
+            'title' => 'Body lg',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span, blockquote',
+            'classes' => 'body-lg'
+          ),
+          array(
+            'title' => 'Body md',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span, blockquote',
+            'classes' => 'body-md'
+          ),
+          array(
+            'title' => 'Body base',
+            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span, blockquote',
+            'classes' => 'body-base'
           ),
         ),
       ),
-      array(
-        'title' => 'Font Family',
+       array(
+        'title' => 'Buttons',
         'items' => array(
           array(
-            'title' => 'Open Sans',
-            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
-            'classes' => 'font-body'
+            'title' => 'Button',
+            'selector' => 'a',
+            'classes' => 'button'
+          ),
+          array(
+            'title' => 'Button Blue',
+            'selector' => 'a',
+            'classes' => 'button-blue'
+          ),
+          array(
+            'title' => 'Button Outline',
+            'selector' => 'a',
+            'classes' => 'button-outline'
+          ),
+          array(
+            'title' => 'Button Blue Outline',
+            'selector' => 'a',
+            'classes' => 'button-blue-outline'
           ),
         ),
       ),

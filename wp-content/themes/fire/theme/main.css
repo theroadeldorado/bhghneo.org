@@ -3,8 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@config '../tailwind.site.config.js';
-
 /* base */
 @import './assets/styles/base/fonts';
 @import './assets/styles/base/scaffolding';
@@ -15,3 +13,5 @@
 @import './assets/styles/components/forms';
 @import './assets/styles/components/links';
 @import './assets/styles/components/skip-to-main';
+
+@config '../tailwind.site.config.js';
