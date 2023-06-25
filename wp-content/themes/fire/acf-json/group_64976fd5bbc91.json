@@ -50,7 +50,7 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 2,
+            "rows": 1,
             "placeholder": "",
             "new_lines": "br"
         },
@@ -76,7 +76,7 @@
                 "heading-5": "Heading 5",
                 "heading-6": "Heading 6"
             },
-            "default_value": "heading-4",
+            "default_value": "heading-2",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -103,5 +103,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687646424
+    "modified": 1687647819
 }

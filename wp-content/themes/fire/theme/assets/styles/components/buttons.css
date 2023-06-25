@@ -13,7 +13,7 @@
     @apply rounded-md;
     @apply text-[14px] leading-none font-bold;
     @apply relative;
-    @apply transition duration-200 cursor-pointer ease-in-out delay-100;
+    @apply transition duration-200 cursor-pointer ease-in-out;
     @apply bg-orange-2 text-white !no-underline;
 
     &:focus {
@@ -24,18 +24,13 @@
       @apply w-4 h-4 block;
     }
 
-    &:before {
-      content: '';
-      @apply absolute z-[-1] bg-blue-2 rounded-md top-1/2 left-0 -translate-y-1/2 w-full h-[120%] block -translate-x-full transition-all duration-300 ease-in-out;
-    }
-
     &:hover {
-      @apply text-white bg-blue-2 before:translate-x-0;
+      @apply text-white bg-blue-2;
     }
 
     &-blue {
       @apply button;
-      @apply text-white bg-blue-2 before:bg-orange-2;
+      @apply text-white bg-blue-2;
       &:hover {
         @apply text-white bg-orange-2;
       }
@@ -43,7 +38,7 @@
 
     &-white {
       @apply button;
-      @apply text-orange-2 bg-white before:bg-orange-2;
+      @apply text-orange-2 bg-white;
       &:hover {
         @apply text-white bg-orange-2;
       }
@@ -51,7 +46,7 @@
 
     &-blue-outline {
       @apply button;
-      @apply border-blue-2 text-blue-2 border-2 bg-transparent before:bg-blue-2;
+      @apply border-blue-2 text-blue-2 border-2 bg-transparent;
       &:hover {
         @apply text-white bg-blue-2;
       }
@@ -59,7 +54,7 @@
 
     &-white-outline {
       @apply button;
-      @apply border-white text-white border-2 bg-transparent before:bg-orange-2;
+      @apply border-white text-white border-2 bg-transparent;
       &:hover {
         @apply text-white bg-orange-2;
       }
@@ -67,7 +62,7 @@
 
     &-outline {
       @apply button;
-      @apply border-orange-2 text-orange-2 border-2 bg-transparent before:bg-orange-2;
+      @apply border-orange-2 text-orange-2 border-2 bg-transparent;
       &:hover {
         @apply text-white bg-orange-2;
       }

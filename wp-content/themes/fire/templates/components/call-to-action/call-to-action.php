@@ -28,6 +28,7 @@
       <?php endif; ?>
 
       <?php if( have_rows('buttons') ):?>
+        <div class="flex flex-wrap justify-center gap-5">
         <?php while ( have_rows('buttons') ) : the_row();
           $button = get_sub_field('button');
           $button_type = get_sub_field('button_type');?>
@@ -36,8 +37,6 @@
           <?php endif;?>
         <?php endwhile;?>
       <?php endif; ?>
-
-      <div><a class="block px-5 py-3 mb-3 text-sm font-semibold text-white transition duration-200 bg-[#F36917] border border-[#F36917] rounded md:inline-block md:mr-3 md:mb-0 hover:bg-[#09395B] hover:border-[#09395B]" href="#">Donate</a><a class="block px-5 py-3 text-sm font-semibold text-[#F36917] transition duration-200 border border-[#F36917] rounded md:inline-block hover:text-white hover:bg-[#F36917] hover:border-[#09395B]" href="#">Events</a></div>
     </div>
   </div>
 

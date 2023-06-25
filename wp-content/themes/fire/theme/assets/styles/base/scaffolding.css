@@ -7,6 +7,10 @@
     }
   }
 
+  body {
+    @apply selection:text-white selection:bg-blue-1;
+  }
+
   img {
     @apply max-w-full;
   }
@@ -26,14 +30,14 @@
   [x-cloak] {
     @apply !hidden;
   }
-  
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
 
- .no-scrollbar {
-   -ms-overflow-style: none; /* IE and Edge */
-   scrollbar-width: none; /* Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 
   .sr-only {
