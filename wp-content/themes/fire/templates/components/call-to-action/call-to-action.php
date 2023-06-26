@@ -13,7 +13,7 @@
 
 <?php $section->start(); ?>
 
-  <div class="container px-4 mx-auto">
+  <div class="container">
     <div class="max-w-xl mx-auto text-center lg:max-w-3xl">
       <?php if($kicker): ?>
         <p class="kicker"><?php echo $kicker;?></p>

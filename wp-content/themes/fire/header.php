@@ -47,11 +47,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header
     x-data="header"
     @scroll.window="scroll()"
-    class="site-header w-full mb-[100px] fixed bg-orange-2 shadow-[0_-2px_15px_rgba(0,0,0,0.1)] duration-500 lg:sticky z-[1001] transition-all ease-in-out <?php echo is_user_logged_in() ? 'top-0 lg:top-8' : 'top-0'; ?>"
+    class="site-header w-full fixed bg-orange-2 shadow-[0_-2px_15px_rgba(0,0,0,0.1)] duration-500 lg:sticky z-[1001] transition-all ease-in-out <?php echo is_user_logged_in() ? 'top-0 lg:top-8' : 'top-0'; ?>"
     :class="{ '-translate-y-full': hideHeader }"
   >
 
-    <div class="container px-4 mx-auto relative z-[1]">
+    <div class="container relative z-[1]">
       <nav class="flex items-center justify-between py-3">
         <a class="text-2xl leading-none relative z-[1002]" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
           <span class="w-14 lg:w-20 h-14 lg:h-20 flex items-center justify-center bg-white border-4 border-white rounded-full"><?php new Fire_SVG('logo'); ?></span>

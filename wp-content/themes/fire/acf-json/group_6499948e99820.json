@@ -1,9 +1,9 @@
 {
-    "key": "group_64976f61f3bb5",
-    "title": "Call to Action",
+    "key": "group_6499948e99820",
+    "title": "Highlights",
     "fields": [
         {
-            "key": "field_64976f62d0159",
+            "key": "field_6499948e2f056",
             "label": "Content",
             "name": "",
             "aria-label": "",
@@ -20,51 +20,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_64976f6fd015a",
-            "label": "Kicker",
-            "name": "kicker",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6497712e894db",
-            "label": "Heading",
-            "name": "heading",
-            "aria-label": "",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_64976fd5bbc91"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
-        },
-        {
-            "key": "field_64977143894dc",
-            "label": "Copy",
-            "name": "copy",
+            "key": "field_649994c72f057",
+            "label": "Intro Copy",
+            "name": "intro_copy",
             "aria-label": "",
             "type": "textarea",
             "instructions": "",
@@ -77,14 +35,14 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 2,
+            "rows": 4,
             "placeholder": "",
             "new_lines": "wpautop"
         },
         {
-            "key": "field_6497715c894dd",
-            "label": "Buttons",
-            "name": "buttons",
+            "key": "field_649996ce2f058",
+            "label": "Highlights",
+            "name": "highlights",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -97,16 +55,63 @@
             },
             "layout": "table",
             "pagination": 0,
-            "min": 0,
+            "min": 1,
             "max": 0,
             "collapsed": "",
-            "button_label": "Add Button",
+            "button_label": "Add Highlight",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6497716a894de",
-                    "label": "Button",
-                    "name": "button",
+                    "key": "field_649996de2f059",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_649996ce2f058"
+                },
+                {
+                    "key": "field_649996f02f05a",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "thumbnail",
+                    "parent_repeater": "field_649996ce2f058"
+                },
+                {
+                    "key": "field_649996fc2f05b",
+                    "label": "Optional Link",
+                    "name": "optional_link",
                     "aria-label": "",
                     "type": "link",
                     "instructions": "",
@@ -118,39 +123,12 @@
                         "id": ""
                     },
                     "return_format": "array",
-                    "parent_repeater": "field_6497715c894dd"
-                },
-                {
-                    "key": "field_64977176894df",
-                    "label": "Button Type",
-                    "name": "button_type",
-                    "aria-label": "",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "button": "Button",
-                        "button-outline": "Button Outline"
-                    },
-                    "default_value": false,
-                    "return_format": "value",
-                    "multiple": 0,
-                    "allow_null": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "placeholder": "",
-                    "parent_repeater": "field_6497715c894dd"
+                    "parent_repeater": "field_649996ce2f058"
                 }
             ]
         },
         {
-            "key": "field_649771bdd5736",
+            "key": "field_6499971f2f05c",
             "label": "Settings",
             "name": "",
             "aria-label": "",
@@ -167,7 +145,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_649771c5d5737",
+            "key": "field_649997272f05d",
             "label": "Settings",
             "name": "settings",
             "aria-label": "",
@@ -207,5 +185,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687656043
+    "modified": 1687787933
 }
