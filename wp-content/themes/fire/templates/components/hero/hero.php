@@ -11,7 +11,7 @@
 
   $section->add_classes([
     'relative py-20 md:py-40 bg-orange-2 flex items-center justify-center',
-    $video ? 'min-h-[400px] md:min-h-[700px] xl:min-h-[800px]':'',
+    $video ? 'min-h-[400px] md:min-h-[500px] xl:min-h-[600px]':'',
 
   ]);
 ?>

@@ -2565,8 +2565,8 @@ a:focus-visible {
   .md\:min-h-\[340px\] {
     min-height: 340px;
   }
-  .md\:min-h-\[700px\] {
-    min-height: 700px;
+  .md\:min-h-\[500px\] {
+    min-height: 500px;
   }
   .md\:w-24 {
     width: 6rem;
@@ -2913,8 +2913,8 @@ a:focus-visible {
   }
 }
 @media (min-width: 1200px) {
-  .xl\:min-h-\[800px\] {
-    min-height: 800px;
+  .xl\:min-h-\[600px\] {
+    min-height: 600px;
   }
 }
 @media (min-width: 768px) {
