@@ -832,6 +832,8 @@ h1,
   }
 }
 .prose a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline), .wizzy a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline) {
+  --tw-text-opacity: 1;
+  color: rgb(243 105 23 / var(--tw-text-opacity));
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;

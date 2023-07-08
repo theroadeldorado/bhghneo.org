@@ -102,7 +102,7 @@
     }
 
     a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline) {
-      @apply underline hover:no-underline decoration-1 underline-offset-1;
+      @apply text-orange-2 underline hover:no-underline decoration-1 underline-offset-1;
     }
 
     ul,
