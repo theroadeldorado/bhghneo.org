@@ -16,6 +16,8 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="icon" type="image/svg+xml" href="/wp-content/themes/fire/theme/assets/media/favicons/favicon.svg">
+  <link rel="icon" type="image/png" href="/wp-content/themes/fire/theme/assets/media/favicons/favicon.png">
   <?php
     $gtm = get_field('gtm', 'site_settings');
     $google_tag_manager_enabled = $gtm ? get_field('gtm', 'site_settings')['enable_gtm'] : null;
