@@ -15,3 +15,23 @@
 @import './assets/styles/components/skip-to-main';
 
 @config '../tailwind.site.config.js';
+
+.menu-item-has-children {
+  @apply relative hover:after:pointer-events-auto;
+  &:after {
+    content: '';
+    @apply h-2.5 block absolute top-full -translate-x-1/2 w-[400px] left-1/2 pointer-events-none;
+  }
+  &:hover {
+    & > .sub-menu {
+      @apply pointer-events-auto opacity-100 flex-col flex gap-1;
+    }
+  }
+}
+
+.sub-menu {
+  @apply absolute top-full z-10 bg-white rounded-lg pointer-events-none shadow-lg opacity-0 -left-2.5 p-2.5 mt-2.5 w-[180px];
+  a {
+    @apply hover:text-blue-2;
+  }
+}

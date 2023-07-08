@@ -2337,6 +2337,57 @@ a:focus-visible {
 }
 /* base */
 /* components */
+.menu-item-has-children {
+  position: relative;
+}
+@media (hover: hover) and (pointer: fine) {
+  .menu-item-has-children:hover::after {
+    content: var(--tw-content);
+    pointer-events: auto;
+  }
+}
+.menu-item-has-children:after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: block;
+    height: 0.625rem;
+    width: 400px;
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+.menu-item-has-children:hover > .sub-menu {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  opacity: 1;
+}
+.sub-menu {
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: -0.625rem;
+  z-index: 10;
+  margin-top: 0.625rem;
+  width: 180px;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.625rem;
+  opacity: 0;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+@media (hover: hover) and (pointer: fine) {
+  .sub-menu a:hover {
+    --tw-text-opacity: 1;
+    color: rgb(9 57 91 / var(--tw-text-opacity));
+  }
+}
 .before\:bg-white::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;

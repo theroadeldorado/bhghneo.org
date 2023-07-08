@@ -34,7 +34,7 @@
                 <p class="mb-10 text-lg text-blue-1 font-medium"><?php echo $subtitle;?></p>
               <?php endif;?>
               <?php if($content):?>
-                <div class="mb-8 text-base leading-relaxed text-blue-1 line-clamp-5"><?php echo $content;?></div>
+                <div class="mb-8 text-base leading-relaxed text-blue-1 line-clamp-5 <?php echo !$subtitle ? 'mt-8' : '';?>"><?php echo $content;?></div>
               <?php endif;?>
               <a class="mb-3 button" href="#<?php echo $name;?>">Read <?php echo $name;?> Story</a>
             </div>
