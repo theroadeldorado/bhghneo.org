@@ -30,8 +30,8 @@
 }
 
 .sub-menu {
-  @apply absolute top-full z-10 bg-white rounded-lg pointer-events-none shadow-lg opacity-0 -left-2.5 p-2.5 mt-2.5 w-[180px];
+  @apply lg:absolute lg:top-full z-10 lg:bg-white lg:rounded-lg lg:pointer-events-none lg:shadow-lg lg:opacity-0 lg:-left-2.5 lg:p-2.5 lg:mt-2.5 lg:w-[180px];
   a {
-    @apply hover:text-blue-2;
+    @apply text-white lg:text-blue-1 hover:text-blue-2;
   }
 }

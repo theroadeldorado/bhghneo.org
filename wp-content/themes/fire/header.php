@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="w-14 lg:w-20 h-14 lg:h-20 flex items-center justify-center bg-white border-4 border-white rounded-full"><?php new Fire_SVG('logo'); ?></span>
           <span class="sr-only"><?php bloginfo( 'name' ); ?></span>
         </a>
-        <div class="lg:hidden">
+        <div class="lg:hidden flex items-center justify-center">
           <button class="ml-2 w-7 h-[22px] lg:hidden group relative z-[1002]" @click="navOpen = ! navOpen">
             <span class="sr-only"><?php _e('Toggle navigation', 'fire'); ?></span>
             <span
@@ -90,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       'depth'           => 2,
                       'theme_location'  => 'primary',
                       'menu_class'      => 'list-none [&>li]:text-center [&>li]:w-full [&>li]:lg:w-auto flex flex-col lg:flex-row items-center lg:items-center gap-4 lg:gap-[60px] delay-400',
-                      'link_class'      => 'block text-white font-medium text-[40px] tracking-[0.02em] w-full',
+                      'link_class'      => 'block text-white font-medium text-[36px] tracking-[0.02em] w-full',
                       'sub_link_class' => 'sub_link_class',
                       'sub_menu_class' => 'sub_menu_class',
                     )
