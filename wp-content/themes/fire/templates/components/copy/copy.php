@@ -8,7 +8,7 @@
 <?php $section->start(); ?>
 
   <?php if($copy) : ?>
-    <div class="wizzy container max-w-xl lg:max-w-3xl">
+    <div class="wizzy container max-w-2xl lg:max-w-5xl">
       <?php echo $copy; ?>
     </div>
   <?php endif; ?>

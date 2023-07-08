@@ -1880,6 +1880,9 @@ a:focus-visible {
 .w-screen {
   width: 100vw;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
 .max-w-md {
   max-width: 28rem;
 }
@@ -2759,6 +2762,9 @@ a:focus-visible {
   }
   .lg\:max-w-3xl {
     max-width: 48rem;
+  }
+  .lg\:max-w-5xl {
+    max-width: 64rem;
   }
   .lg\:max-w-md {
     max-width: 28rem;
