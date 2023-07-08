@@ -2440,6 +2440,12 @@ a:focus-visible {
   }
 }
 @media (min-width: 768px) {
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
   .md\:row-start-1 {
     grid-row-start: 1;
   }
@@ -2478,6 +2484,9 @@ a:focus-visible {
   }
   .md\:-mt-gap-xs {
     margin-top: -1.25rem;
+  }
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
   .md\:mb-gap-0 {
     margin-bottom: 0;
@@ -2750,6 +2759,9 @@ a:focus-visible {
   }
   .lg\:max-w-3xl {
     max-width: 48rem;
+  }
+  .lg\:max-w-md {
+    max-width: 28rem;
   }
   .lg\:-scroll-mb-gap-0 {
     scroll-margin-bottom: 0;
