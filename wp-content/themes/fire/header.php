@@ -106,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               'depth'           => 2,
               'theme_location'  => 'primary',
               'menu_class'      => 'items-center hidden w-auto ml-auto space-x-8 lg:flex',
-              'link_class'      => 'text-sm font-medium text-white hover:text-blue-2',
+              'link_class'      => 'text-[16px] font-medium text-white hover:text-blue-2',
               'sub_link_class' => 'sub_link_class',
               'sub_menu_class' => 'sub_menu_class',
             )
