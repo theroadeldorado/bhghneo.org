@@ -2545,6 +2545,9 @@ a:focus-visible {
   .md\:w-24 {
     width: 6rem;
   }
+  .md\:w-\[340px\] {
+    width: 340px;
+  }
   .md\:-scroll-mb-gap-0 {
     scroll-margin-bottom: 0;
   }
