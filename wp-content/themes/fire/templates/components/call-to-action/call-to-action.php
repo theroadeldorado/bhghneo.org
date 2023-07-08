@@ -7,7 +7,7 @@
   $style .= ' mt-2 mb-4 text-blue-2';
 
   $section->add_classes([
-    'py-20'
+    'py-10 md:py-20'
   ]);
 ?>
 

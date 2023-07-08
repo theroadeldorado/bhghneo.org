@@ -7,7 +7,7 @@
   $counter = 0;
 
   $section->add_classes([
-    'py-20'
+    'py-10 md:py-20 max-w-100vw overflow-hidden'
   ]);
 ?>
 
@@ -25,8 +25,8 @@
           $name = get_field( 'name', $story->ID );
           $subtitle = get_field( 'subtitle', $story->ID );
           $image = get_field( 'image', $story->ID );?>
-          <div class="grid gap-20 grid-cols-2 row-start-1 col-start-1" :class="{'pointer-events-none': active !== <?php echo $counter;?>}">
-            <div class="duration-1000 ease-in-out block transition" :class="{'-translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
+          <div class="grid gap-10 md:gap-20 md:grid-cols-2 row-start-1 col-start-1" :class="{'pointer-events-none': active !== <?php echo $counter;?>}">
+            <div class="duration-1000 ease-in-out block transition row-start-2 md:row-start-1" :class="{'-translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
               <?php if($name):?>
                 <p class="text-2xl font-bold font-heading text-blue-2"><?php echo $name;?></p>
               <?php endif;?>
@@ -38,9 +38,9 @@
               <?php endif;?>
               <a class="mb-3 button" href="#<?php echo $name;?>">Read <?php echo $name;?> Story</a>
             </div>
-            <div class="duration-1000 ease-in-out block transition" :class="{'translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
+            <div class="duration-1000 ease-in-out block row-start-1 transition" :class="{'translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
               <?php if($image): ?>
-                <div class="aspect-w-7 aspect-h-5 w-full overflow-hidden rounded-md">
+                <div class="aspect-w-7 aspect-h-5 w-full overflow-hidden rounded-md ">
                   <?php new Fire_Picture($image['url'], $image['alt'], [[700,500],[700,500],[700,500]], 'object-cover w-full h-full absolute inset-0');?>
                 </div>
               <?php endif; ?>
@@ -49,7 +49,7 @@
           <?php $counter++;?>
         <?php endforeach; ?>
       </div>
-      <div class="hidden mt-6 lg:block">
+      <div class="mt-6 flex items-center justify-center md:justify-start">
         <button @click="prev()" class="p-3 mr-3 rounded-full w-14 h-14 bg-orange-2 hover:bg-orange-2/40">
           <svg class="text-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>

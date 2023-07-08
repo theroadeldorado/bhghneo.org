@@ -1,7 +1,7 @@
 <?php
   $intro_copy = get_sub_field('intro_copy');
   $section->add_classes([
-    'py-20'
+    'py-10 md:py-20'
   ]);
 ?>
 

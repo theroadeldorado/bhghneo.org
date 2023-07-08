@@ -10,7 +10,7 @@
 
 
   $section->add_classes([
-    'relative py-40 bg-orange-2 flex items-center justify-center',
+    'relative py-20 md:py-40 bg-orange-2 flex items-center justify-center',
     $video ? 'min-h-[400px] md:min-h-[700px] xl:min-h-[800px]':'',
 
   ]);
