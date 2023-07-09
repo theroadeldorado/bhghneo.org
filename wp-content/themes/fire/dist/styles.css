@@ -2442,6 +2442,14 @@ a:focus-visible {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.odd\:bg-blue-2:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 57 91 / var(--tw-bg-opacity));
+}
+.even\:bg-orange-2:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 105 23 / var(--tw-bg-opacity));
+}
 @media (hover: hover) and (pointer: fine) {
   .hover\:bg-orange-2\/40:hover {
     background-color: rgb(243 105 23 / 0.4);

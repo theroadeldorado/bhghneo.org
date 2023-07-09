@@ -1,7 +1,7 @@
 <?php
   $intro_copy = get_sub_field('intro_copy');
   $section->add_classes([
-    'py-10 md:py-20'
+    'py-10 md:py-20 bg-blue-2'
   ]);
 ?>
 
@@ -14,18 +14,18 @@
             <?php while ( have_rows('highlights') ) : the_row();
               $title = get_sub_field('title');
               $optional_link = get_sub_field('optional_link');
-              $classes = 'text-3xl font-bold text-blue-2 font-heading hover:text-orange-2 duration-300 ease-in-out transition';?>
+              $classes = 'text-3xl font-bold font-heading hover:text-orange-2 duration-300 ease-in-out transition';?>
               <li class="mb-2">
                 <?php if($optional_link):?>
                   <a
                     class="<?php echo $classes;?>" href="<?php echo $optional_link['url'];?>" target="<?php echo $optional_link['target'];?>"
                     @mouseover="active = <?php echo $counter;?>"
-                    :class="{'text-orange-2': active == <?php echo $counter;?>}"
+                    :class="{'text-orange-2': active === <?php echo $counter;?>, 'text-white': active !== <?php echo $counter;?>}"
                   >
                 <?php else:?>
                   <span
                     @mouseover="active = <?php echo $counter;?>"
-                    :class="{'text-orange-2': active == <?php echo $counter;?>}"
+                    :class="{'text-orange-2': active === <?php echo $counter;?>, 'text-white': active !== <?php echo $counter;?>}"
                     class="<?php echo $classes;?>"
                   >
                 <?php endif;?>
@@ -41,7 +41,7 @@
           </ul>
         <?php endif; ?>
         <?php if($intro_copy) : ?>
-          <div class="wizzy text-blue-2 text-md">
+          <div class="wizzy text-white text-md">
             <?php echo $intro_copy; ?>
           </div>
         <?php endif; ?>

@@ -21,7 +21,7 @@
         $title = get_sub_field('title');
         $copy = get_sub_field('copy');?>
 
-        <div class="block h-full mx-4 first:md:ml-20 last:md:mr-20 shrink-0 overflow-hidden rounded-md bg-orange-2">
+        <div class="block h-full mx-4 first:md:ml-20 last:md:mr-20 shrink-0 overflow-hidden rounded-md odd:bg-blue-2 even:bg-orange-2">
           <div class="py-8 px-6 h-full w-full max-w-md">
             <h3 class="kicker text-white text-[14px] md:text-[18px] mb-1"><?php echo $year;?></h3>
             <p class="heading-4 mb-3 text-white"><?php echo $title;?></p>
