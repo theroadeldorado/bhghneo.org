@@ -1663,6 +1663,10 @@ a:focus-visible {
   margin-left: -1rem;
   margin-right: -1rem;
 }
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1842,6 +1846,9 @@ a:focus-visible {
 }
 .h-\[4px\] {
   height: 4px;
+}
+.h-auto {
+  height: auto;
 }
 .h-full {
   height: 100%;
@@ -2033,6 +2040,9 @@ a:focus-visible {
 .items-center {
   align-items: center;
 }
+.items-stretch {
+  align-items: stretch;
+}
 .justify-start {
   justify-content: flex-start;
 }
@@ -2174,6 +2184,10 @@ a:focus-visible {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .py-8 {
   padding-top: 2rem;
@@ -2654,6 +2668,10 @@ a:focus-visible {
   .md\:gap-20 {
     gap: 5rem;
   }
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -2675,11 +2693,11 @@ a:focus-visible {
   .md\:opacity-100 {
     opacity: 1;
   }
-  .first\:md\:pl-20:first-child {
-    padding-left: 5rem;
+  .first\:md\:ml-20:first-child {
+    margin-left: 5rem;
   }
-  .last\:md\:pr-20:last-child {
-    padding-right: 5rem;
+  .last\:md\:mr-20:last-child {
+    margin-right: 5rem;
   }
 }
 @media (min-width: 992px) {

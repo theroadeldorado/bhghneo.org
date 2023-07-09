@@ -1,9 +1,9 @@
 {
-    "key": "group_64a9f9d5c0cd8",
-    "title": "Full Width Image",
+    "key": "group_64a9fe4619f38",
+    "title": "Full width Image",
     "fields": [
         {
-            "key": "field_64a9f9d5c7087",
+            "key": "field_64a9fe46205b3",
             "label": "Content",
             "name": "",
             "aria-label": "",
@@ -20,7 +20,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_64a9f9e789e35",
+            "key": "field_64a9fe52af6ab",
             "label": "Image",
             "name": "image",
             "aria-label": "",
@@ -42,10 +42,10 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "preview_size": "thumbnail"
+            "preview_size": "medium"
         },
         {
-            "key": "field_64a9f9d5c7098",
+            "key": "field_64a9fe46205c1",
             "label": "Settings",
             "name": "",
             "aria-label": "",
@@ -62,7 +62,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_64a9f9d5c70a0",
+            "key": "field_64a9fe46205c8",
             "label": "Settings",
             "name": "settings",
             "aria-label": "",
@@ -102,5 +102,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688861178
+    "modified": 1688862299
 }

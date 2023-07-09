@@ -13,7 +13,7 @@
     <?php new Fire_Heading($tag, $heading, $style.' text-center mb-12') ?>
   <?php endif; ?>
 
-  <div class="flex flex-nowrap overflow-x-scroll pb-4 hide-scroll-bar">
+  <div class="flex flex-nowrap overflow-x-scroll pb-4 hide-scroll-bar items-stretch">
 
     <?php if( have_rows('timeline_events') ):?>
       <?php while ( have_rows('timeline_events') ) : the_row();
@@ -21,8 +21,8 @@
         $title = get_sub_field('title');
         $copy = get_sub_field('copy');?>
 
-        <div class="block h-full px-4 first:md:pl-20 last:md:pr-20 shrink-0">
-          <div class="py-8 px-6 h-full w-full max-w-md overflow-hidden rounded-md bg-orange-2">
+        <div class="block h-full mx-4 first:md:ml-20 last:md:mr-20 shrink-0 overflow-hidden rounded-md bg-orange-2">
+          <div class="py-8 px-6 h-full w-full max-w-md">
             <h3 class="kicker text-white text-[14px] md:text-[18px] mb-1"><?php echo $year;?></h3>
             <p class="heading-4 mb-3 text-white"><?php echo $title;?></p>
             <div class="wizzy text-white text-[16px]"><?php echo $copy;?></div>

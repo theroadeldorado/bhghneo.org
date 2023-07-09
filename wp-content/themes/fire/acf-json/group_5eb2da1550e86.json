@@ -113,15 +113,15 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_64a9fa0d2fdcf": {
-                    "key": "layout_64a9fa0d2fdcf",
+                "layout_64a9fe7ca28c2": {
+                    "key": "layout_64a9fe7ca28c2",
                     "name": "full_width_image",
-                    "label": "Full Width Image",
+                    "label": "Full width Image",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_64a9fa0d2fdd1",
-                            "label": "Full Width Image",
+                            "key": "field_64a9fe88a28c5",
+                            "label": "Full width Image",
                             "name": "full_width_image",
                             "aria-label": "",
                             "type": "clone",
@@ -134,39 +134,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_64a9f9d5c0cd8"
-                            ],
-                            "display": "seamless",
-                            "layout": "",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_64a9fa2c2fdd2": {
-                    "key": "layout_64a9fa2c2fdd2",
-                    "name": "full_width_image",
-                    "label": "Full Width Image",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_64a9fa2c2fdd4",
-                            "label": "Full Width Image",
-                            "name": "full_width_image",
-                            "aria-label": "",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_64a9f9d5c0cd8"
+                                "group_64a9fe4619f38"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -361,5 +329,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688861230
+    "modified": 1688862353
 }
