@@ -10,7 +10,7 @@
 <?php $section->start(); ?>
 <div>
   <?php if($heading): ?>
-    <?php new Fire_Heading($tag, $heading, $style.' text-center mb-12') ?>
+    <?php new Fire_Heading($tag, $heading, $style.' text-center text-blue-2 mb-12') ?>
   <?php endif; ?>
 
   <div class="flex flex-nowrap overflow-x-scroll pb-4 hide-scroll-bar items-stretch">

@@ -567,7 +567,7 @@ html,
   font-weight: 400;
   line-height: 1.5;
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(9 57 91 / var(--tw-text-opacity));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -2121,6 +2121,10 @@ a:focus-visible {
   --tw-bg-opacity: 1;
   background-color: rgb(9 57 91 / var(--tw-bg-opacity));
 }
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -2275,10 +2279,6 @@ a:focus-visible {
 .text-\[\#fff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-blue-1 {
-  --tw-text-opacity: 1;
-  color: rgb(66 104 137 / var(--tw-text-opacity));
 }
 .text-blue-2 {
   --tw-text-opacity: 1;

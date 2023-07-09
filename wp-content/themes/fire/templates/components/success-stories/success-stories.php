@@ -7,7 +7,7 @@
   $counter = 0;
 
   $section->add_classes([
-    'py-10 md:py-20 max-w-100vw overflow-hidden'
+    'py-10 md:py-20 max-w-100vw overflow-hidden bg-gray-200'
   ]);
 ?>
 
@@ -15,7 +15,7 @@
   <div class="container" x-data="success<?php echo $section->count;?>()">
 
     <?php if($heading): ?>
-      <?php new Fire_Heading($tag, $heading, $style.' text-center mb-12') ?>
+      <?php new Fire_Heading($tag, $heading, $style.' text-center text-orange-2 mb-12') ?>
     <?php endif; ?>
 
     <?php if( $stories ): ?>
@@ -31,10 +31,10 @@
                 <p class="text-2xl font-bold font-heading text-blue-2"><?php echo $name;?></p>
               <?php endif;?>
               <?php if($subtitle):?>
-                <p class="mb-10 text-lg text-blue-1 font-medium"><?php echo $subtitle;?></p>
+                <p class="mb-10 text-lg text-orange-2 font-medium"><?php echo $subtitle;?></p>
               <?php endif;?>
               <?php if($content):?>
-                <div class="mb-8 text-base leading-relaxed text-blue-1 line-clamp-5 <?php echo !$subtitle ? 'mt-8' : '';?>"><?php echo $content;?></div>
+                <div class="mb-8 text-base leading-relaxed text-blue-2 line-clamp-5 <?php echo !$subtitle ? 'mt-8' : '';?>"><?php echo $content;?></div>
               <?php endif;?>
               <a class="mb-3 button" href="#<?php echo $name;?>">Read <?php echo $name;?> Story</a>
             </div>
