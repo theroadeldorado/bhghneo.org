@@ -3001,6 +3001,9 @@ a:focus-visible {
   .lg\:max-w-3xl {
     max-width: 48rem;
   }
+  .lg\:max-w-4xl {
+    max-width: 56rem;
+  }
   .lg\:max-w-5xl {
     max-width: 64rem;
   }
