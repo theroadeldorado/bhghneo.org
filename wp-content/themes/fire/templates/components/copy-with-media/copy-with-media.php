@@ -12,7 +12,7 @@
 
 <?php $section->start(); ?>
 
-  <div class="container <?php echo $color !== 'bg-white' ? 'text-white' : '';?>" <?php echo $color === 'bg-orange-2' ? 'data-color="orange"' : '';?>>
+  <div class="container <?php echo $color !== 'bg-white' ? 'text-white' : '';?>" <?php echo $color === 'bg-orange-2' ? 'data-color="orange"' : '';?> <?php echo $color === 'bg-blue-2' ? 'data-color="blue"' : '';?>>
     <div class="grid md:grid-cols-2 gap-10 md:gap-20">
       <div class="row-start-1 md:row-start-1 <?php echo $image_on_right ? 'md:col-start-2' : 'md:col-start-1';?>">
         <?php if($image): ?>

@@ -1193,7 +1193,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-blue {
+[data-color='orange'] .button-blue, [data-color='blue'] .button-blue {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1202,7 +1202,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(243 105 23 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-blue:hover {
+[data-color='orange'] .button-blue:hover, [data-color='blue'] .button-blue:hover {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1295,7 +1295,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-white {
+[data-color='orange'] .button-white, [data-color='blue'] .button-white {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1304,7 +1304,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(243 105 23 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-white:hover {
+[data-color='orange'] .button-white:hover, [data-color='blue'] .button-white:hover {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1397,7 +1397,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-blue-outline {
+[data-color='orange'] .button-blue-outline, [data-color='blue'] .button-blue-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1406,7 +1406,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(243 105 23 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-blue-outline:hover {
+[data-color='orange'] .button-blue-outline:hover, [data-color='blue'] .button-blue-outline:hover {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1501,7 +1501,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-white-outline {
+[data-color='orange'] .button-white-outline, [data-color='blue'] .button-white-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1510,7 +1510,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(243 105 23 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-white-outline:hover {
+[data-color='orange'] .button-white-outline:hover, [data-color='blue'] .button-white-outline:hover {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1605,7 +1605,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-outline {
+[data-color='orange'] .button-outline, [data-color='blue'] .button-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1614,7 +1614,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(243 105 23 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button-outline:hover {
+[data-color='orange'] .button-outline:hover, [data-color='blue'] .button-outline:hover {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1637,7 +1637,7 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button {
+[data-color='orange'] .button, [data-color='blue'] .button {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1646,7 +1646,25 @@ button:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(243 105 23 / var(--tw-text-opacity));
 }
-[data-color='orange'] .button:hover {
+[data-color='orange'] .button:hover, [data-color='blue'] .button:hover {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 105 23 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+[data-color='orange'] .button-outline, [data-color='blue'] .button-outline {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+[data-color='orange'] .button-outline:hover, [data-color='blue'] .button-outline:hover {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
