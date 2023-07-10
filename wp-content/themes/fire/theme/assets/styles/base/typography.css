@@ -101,6 +101,10 @@
       @apply mb-[25px] last:mb-0 mt-[5px] md:mt-[25px];
     }
 
+    iframe {
+      @apply mb-[25px] last:mb-0 mx-auto max-w-full;
+    }
+
     a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline) {
       @apply text-orange-2 underline hover:no-underline decoration-1 underline-offset-1;
     }

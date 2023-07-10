@@ -831,6 +831,15 @@ h1,
     margin-top: 25px;
   }
 }
+.prose iframe, .wizzy iframe {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.prose iframe:last-child, .wizzy iframe:last-child {
+  margin-bottom: 0px;
+}
 .prose a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline), .wizzy a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline) {
   --tw-text-opacity: 1;
   color: rgb(243 105 23 / var(--tw-text-opacity));
