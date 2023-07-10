@@ -68,4 +68,13 @@
       }
     }
   }
+
+  [data-color='orange'] {
+    .button {
+      @apply text-orange-2 bg-white border-2 border-white;
+      &:hover {
+        @apply text-white bg-orange-2 border-2 border-white;
+      }
+    }
+  }
 }

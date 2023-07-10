@@ -2,15 +2,17 @@
   $copy = get_sub_field('copy');
   $image = get_sub_field('image');
   $image_on_right = get_sub_field('image_on_right');
+  $color = get_sub_field('color');
 
   $section->add_classes([
-    'py-10 md:py-20'
+    'py-10 md:py-20',
+    $color
   ]);
 ?>
 
 <?php $section->start(); ?>
 
-  <div class="container">
+  <div class="container <?php echo $color !== 'bg-white' ? 'text-white' : '';?>" <?php echo $color === 'bg-orange-2' ? 'data-color="orange"' : '';?>>
     <div class="grid md:grid-cols-2 gap-10 md:gap-20">
       <div class="row-start-1 md:row-start-1 <?php echo $image_on_right ? 'md:col-start-2' : 'md:col-start-1';?>">
         <?php if($image): ?>

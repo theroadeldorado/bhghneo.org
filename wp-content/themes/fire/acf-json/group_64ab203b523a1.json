@@ -21,10 +21,10 @@
         },
         {
             "key": "field_64ab231d727b1",
-            "label": "color",
+            "label": "Color",
             "name": "color",
             "aria-label": "",
-            "type": "select",
+            "type": "button_group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -39,11 +39,8 @@
             },
             "default_value": "bg-blue-2",
             "return_format": "value",
-            "multiple": 0,
             "allow_null": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": ""
+            "layout": "horizontal"
         },
         {
             "key": "field_64ab203b59782",
@@ -139,5 +136,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688937294
+    "modified": 1688950328
 }
