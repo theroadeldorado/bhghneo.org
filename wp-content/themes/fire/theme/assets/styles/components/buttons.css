@@ -81,7 +81,7 @@
   [data-color='orange'],
   [data-color='blue'] {
     .button-outline {
-      @apply text-white bg-white border-2 border-white;
+      @apply text-white bg-transparent border-2 border-white;
       &:hover {
         @apply text-white bg-orange-2 border-2 border-white;
       }
