@@ -22,7 +22,7 @@
       <div class="relative grid grid-cols-1 grid-rows-1 bg-black">
         <?php foreach ($images as $image) : ?>
           <div :id="'image-slideshow-<?php echo $section->count;?>-' + current" class="col-span-1 col-start-1 row-span-1 row-start-1 transition-opacity duration-500 ease-in-out" :class="current == <?php echo $index; ?> ? 'opacity-100' : 'opacity-0 pointer-events-none'" :aria-current="current == <?php echo $index; ?> ? 'true' : 'false'" x-ref="slide<?php echo $index; ?>">
-            <?php new Fire_Picture($image['url'], $image['alt'], [[1400, 900], [700, 450], [600, 380]], 'object-cover w-full h-full', false); ?>
+            <?php new Fire_Picture($image['url'], $image['alt'], [[1400, 700], [700, 350], [600, 300]], 'object-cover w-full h-full', false); ?>
           </div>
         <?php $index++;
         endforeach; ?>
