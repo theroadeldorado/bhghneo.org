@@ -18,7 +18,7 @@
             </span>
           <?php endif;?>
           <?php if($stat):?>
-            <h3 class="mb-3 text-xl font-bold text-white md:text-5xl font-heading"><?php echo $stat;?></h3>
+            <h3 class="mb-3 text-xl font-bold text-white md:text-4xl"><?php echo $stat;?></h3>
           <?php endif;?>
           <?php if($description):?>
             <p class="max-w-md mx-auto text-lg text-white lg:px-12 balance-text"><?php echo $description;?></p>
