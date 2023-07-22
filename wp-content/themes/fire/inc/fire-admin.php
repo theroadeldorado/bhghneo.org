@@ -26,4 +26,19 @@ function skycatchfire_set_default_admin_color( $user_id ) {
 add_action( 'user_register', 'skycatchfire_set_default_admin_color' );
 
 
+// remove default post type from admin menu
+function remove_menus(){
+  remove_menu_page( 'edit.php' );                   //Posts
+  remove_menu_page( 'edit-comments.php' );          //Comments
+}
+add_action( 'admin_menu', 'remove_menus' );
+
+// remove default post type from admin bar
+function remove_admin_bar_links() {
+  global $wp_admin_bar;
+  $wp_admin_bar->remove_menu('new-post');
+}
+add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
+
+
 ?>
