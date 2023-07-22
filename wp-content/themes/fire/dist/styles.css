@@ -492,6 +492,9 @@ select {
     font-weight: 300;
     font-style: normal;
   }
+html {
+  scroll-behavior: smooth;
+}
 .site {
   display: flex;
   min-height: 100vh;
