@@ -33,12 +33,6 @@ function remove_menus(){
 }
 add_action( 'admin_menu', 'remove_menus' );
 
-// remove default post type from admin bar
-function remove_admin_bar_links() {
-  global $wp_admin_bar;
-  $wp_admin_bar->remove_menu('new-post');
-}
-add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 
 
 ?>
