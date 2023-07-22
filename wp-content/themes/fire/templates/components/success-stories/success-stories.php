@@ -25,7 +25,7 @@
           $name = get_field( 'name', $story->ID );
           $subtitle = get_field( 'subtitle', $story->ID );
           $image = get_field( 'image', $story->ID );?>
-          <div class="grid gap-10 md:gap-20 md:grid-cols-2 row-start-1 col-start-1" :class="{'pointer-events-none': active !== <?php echo $counter;?>}" x-data="{open: false}">
+          <div x-cloak class="grid gap-10 md:gap-20 md:grid-cols-2 row-start-1 col-start-1" :class="{'pointer-events-none': active !== <?php echo $counter;?>}" x-data="{open: false}">
             <div class="duration-1000 ease-in-out block transition row-start-2 md:row-start-1" :class="{'-translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
               <?php if($name):?>
                 <p class="text-2xl font-bold font-heading text-blue-2"><?php echo $name;?></p>
