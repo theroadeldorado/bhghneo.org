@@ -17,6 +17,38 @@
                 "id": ""
             },
             "layouts": {
+                "layout_64bc30c0251a2": {
+                    "key": "layout_64bc30c0251a2",
+                    "name": "accordion",
+                    "label": "Accordion",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64bc30c0251a4",
+                            "label": "Accordion",
+                            "name": "accordion",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64bc3039bc735"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_64ab20b41b603": {
                     "key": "layout_64ab20b41b603",
                     "name": "banner",
@@ -457,5 +489,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689720086
+    "modified": 1690054877
 }
