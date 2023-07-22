@@ -3,6 +3,18 @@
     @apply scroll-smooth;
   }
 
+  .post-password-form {
+    @apply text-center body-md;
+
+    p {
+      @apply mb-4;
+    }
+
+    input[type='submit'] {
+      @apply button ml-2;
+    }
+  }
+
   .site {
     @apply flex flex-col min-h-screen;
 
