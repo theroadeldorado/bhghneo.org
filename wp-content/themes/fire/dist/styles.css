@@ -1771,6 +1771,9 @@ a:focus-visible {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -3160,6 +3163,12 @@ a:focus-visible {
   .md\:justify-start {
     justify-content: flex-start;
   }
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
   .md\:gap-20 {
     gap: 5rem;
   }
@@ -3203,9 +3212,6 @@ a:focus-visible {
   }
 }
 @media (min-width: 992px) {
-  .lg\:sticky {
-    position: sticky;
-  }
   .lg\:top-8 {
     top: 2rem;
   }

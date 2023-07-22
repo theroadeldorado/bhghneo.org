@@ -49,7 +49,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header
     x-data="header"
     @scroll.window="scroll()"
-    class="site-header w-full fixed bg-orange-2 shadow-[0_-2px_15px_rgba(0,0,0,0.1)] duration-500 lg:sticky z-[1001] transition-all ease-in-out <?php echo is_user_logged_in() ? 'top-0 lg:top-8' : 'top-0'; ?>"
+    class="site-header w-full  bg-orange-2 shadow-[0_-2px_15px_rgba(0,0,0,0.1)] duration-500 sticky z-[1001] transition-all ease-in-out <?php echo is_user_logged_in() ? 'top-0 lg:top-8' : 'top-0'; ?>"
     :class="{ '-translate-y-full': hideHeader }"
   >
 
