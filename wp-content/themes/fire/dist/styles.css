@@ -3443,6 +3443,14 @@ a:focus-visible {
     opacity: 0.5;
   }
 }
+@media (hover: hover) and (pointer: fine) {
+  @media (min-width: 992px) {
+    .hover\:lg\:text-blue-2:hover {
+      --tw-text-opacity: 1;
+      color: rgb(9 57 91 / var(--tw-text-opacity));
+    }
+  }
+}
 @media (min-width: 1200px) {
   .xl\:min-h-\[600px\] {
     min-height: 600px;
