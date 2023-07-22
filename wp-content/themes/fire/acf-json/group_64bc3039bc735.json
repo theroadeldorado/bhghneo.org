@@ -42,6 +42,31 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
+                    "key": "field_64bc37f7df19e",
+                    "label": "Color",
+                    "name": "color",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "bg-orange-2": "Orange",
+                        "bg-blue-2": "Blue",
+                        "bg-yellow": "Yellow"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal",
+                    "parent_repeater": "field_64bc30656999b"
+                },
+                {
                     "key": "field_64bc308c6999c",
                     "label": "Title",
                     "name": "title",
@@ -143,5 +168,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690056377
+    "modified": 1690056980
 }

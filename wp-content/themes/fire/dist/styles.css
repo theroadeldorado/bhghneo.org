@@ -2341,8 +2341,9 @@ a:focus-visible {
 .border-4 {
   border-width: 4px;
 }
-.border-b {
-  border-bottom-width: 1px;
+.border-blue-2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(9 57 91 / var(--tw-border-opacity));
 }
 .border-orange-2 {
   --tw-border-opacity: 1;
@@ -2351,6 +2352,10 @@ a:focus-visible {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-yellow {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 225 0 / var(--tw-border-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -2390,6 +2395,10 @@ a:focus-visible {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 225 0 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -2729,10 +2738,6 @@ a:focus-visible {
   background-color: rgb(243 105 23 / var(--tw-bg-opacity));
 }
 @media (hover: hover) and (pointer: fine) {
-  .hover\:bg-orange-1:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(246 139 17 / var(--tw-bg-opacity));
-  }
   .hover\:bg-orange-2\/40:hover {
     background-color: rgb(243 105 23 / 0.4);
   }
@@ -2758,6 +2763,9 @@ a:focus-visible {
   .hover\:no-underline:hover {
     text-decoration-line: none;
   }
+  .hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
 }
 .focus\:not-sr-only:focus {
   position: static;
@@ -2773,8 +2781,8 @@ a:focus-visible {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.group:last-child .group-last\:border-0 {
-  border-width: 0px;
+.group:last-child .group-last\:border-b {
+  border-bottom-width: 1px;
 }
 @media (hover: hover) and (pointer: fine) {
   .group:hover .group-hover\:scale-105 {
