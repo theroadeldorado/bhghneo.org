@@ -81,18 +81,21 @@
           <?php $counter++;?>
         <?php endforeach; ?>
       </div>
-      <div class="mt-6 flex items-center justify-center md:justify-start">
-        <button @click="prev()" class="p-3 mr-3 rounded-full w-14 h-14 bg-orange-2 hover:bg-orange-2/40">
-          <svg class="text-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          </svg>
-        </button>
-        <button @click="next()" class="p-3 rounded-full w-14 h-14 bg-orange-2 hover:bg-orange-2/40">
-          <svg class="text-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </button>
-      </div>
+
+      <?php if($counter > 1):?>
+        <div class="mt-6 flex items-center justify-center md:justify-start">
+          <button @click="prev()" class="p-3 mr-3 rounded-full w-14 h-14 bg-orange-2 hover:bg-orange-2/40">
+            <svg class="text-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button @click="next()" class="p-3 rounded-full w-14 h-14 bg-orange-2 hover:bg-orange-2/40">
+            <svg class="text-[#fff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      <?php endif; ?>
     <?php endif; ?>
 
     <script>
