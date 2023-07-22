@@ -6,6 +6,7 @@
     &:focus-visible {
       outline: thin dotted theme(colors.gray.400);
     }
+    -webkit-tap-highlight-color: transparent;
   }
 
   .link {
