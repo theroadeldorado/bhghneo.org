@@ -22,10 +22,10 @@
           $name = get_sub_field('name');
           $title = get_sub_field('title');
           $email = get_sub_field('email');?>
-          <div class="w-1/2 md:w-1/3 lg:w-[275px] shrink-0">
-            <div class="flex items-center flex-col gap-1 rounded-md bg-gray-50 shadow-md py-6 px-4">
+          <div class="w-1/2 md:w-[265px] shrink-0">
+            <div class="flex items-center flex-col gap-1 text-center rounded-md bg-gray-50 shadow-md py-6 px-2">
               <?php if($name):?>
-                <h3 class="heading-6 text-blue-2"><?php echo $name;?></h3>
+                <h3 class="heading-7 text-blue-2"><?php echo $name;?></h3>
               <?php endif;?>
               <?php if($title):?>
                 <p class="text-sm"><?php echo $title;?></p>
