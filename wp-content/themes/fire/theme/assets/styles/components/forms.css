@@ -6,4 +6,8 @@
       content: '*';
     }
   }
+
+  .post-password-form2 {
+    @apply bg-red-700;
+  }
 }

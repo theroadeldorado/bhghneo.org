@@ -29,6 +29,19 @@
   }
 }
 
+.post-password-form {
+  @apply text-center body-md mt-20;
+  p {
+    @apply mb-5;
+  }
+  label {
+    @apply font-bold;
+  }
+  input[type='submit'] {
+    @apply button ml-2;
+  }
+}
+
 .sub-menu {
   @apply lg:absolute lg:top-full z-10 lg:bg-white lg:rounded-lg lg:pointer-events-none lg:shadow-lg lg:opacity-0 lg:-left-2.5 lg:p-2.5 lg:mt-2.5 lg:w-[180px];
   a {
