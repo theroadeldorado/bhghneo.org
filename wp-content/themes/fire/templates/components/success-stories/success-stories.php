@@ -49,11 +49,11 @@
             <div
               x-cloak
               x-trap.noscroll="open"
-              class="fixed z-[1003] inset-0 flex items-center justify-center w-screen h-screen bg-orange-2/70 transition-all duration-200 px-4"
+              class="fixed z-[1003] inset-0 flex items-center justify-center w-screen h-screen bg-orange-2/70 transition-all duration-200 lg:px-4"
               :class="{'opacity-0 pointer-events-none': !open}"
               @click="open = false"
             >
-              <div class="container text-left max-w-[600px] p-6 max-h-[80vh] overflow-y-scroll bg-white overflow-hidden rounded-md  border-2 border-orange-2 relative">
+              <div class="container text-left lg:max-w-[600px] p-6 max-h-[100vh] lg:max-h-[80vh] overflow-y-scroll bg-white overflow-hidden lg:rounded-md  border-2 border-orange-2 relative">
                 <button @click="open = false" @click.prevent="open = false" class="absolute w-5 h-5 text-orange-2 cursor-pointer top-4 right-4 hover:text-blue-2">
                   <span class="flex items-center justify-center w-5 h-5">
                   <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 320 512" fill="currentColor"><path d="M312.1 375c9.369 9.369 9.369 24.57 0 33.94s-24.57 9.369-33.94 0L160 289.9l-119 119c-9.369 9.369-24.57 9.369-33.94 0s-9.369-24.57 0-33.94L126.1 256L7.027 136.1c-9.369-9.369-9.369-24.57 0-33.94s24.57-9.369 33.94 0L160 222.1l119-119c9.369-9.369 24.57-9.369 33.94 0s9.369 24.57 0 33.94L193.9 256L312.1 375z"/></svg>
