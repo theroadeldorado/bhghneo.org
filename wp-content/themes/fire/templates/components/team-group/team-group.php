@@ -17,21 +17,21 @@
     <?php endif; ?>
 
     <?php if( have_rows('team_members') ):?>
-      <div class="flex gap-6 justify-center flex-wrap">
+      <div class="flex gap-3 md:gap-6 justify-center flex-wrap">
         <?php while ( have_rows('team_members') ) : the_row();
           $name = get_sub_field('name');
           $title = get_sub_field('title');
           $email = get_sub_field('email');?>
-          <div class="w-1/2 md:w-[265px] shrink-0">
-            <div class="flex items-center flex-col gap-1 text-center rounded-md bg-gray-50 shadow-md py-6 px-2">
+          <div class="w-[calc(50%-12px)] md:w-[265px] shrink-0">
+            <div class="flex items-center flex-col gap-0.5 md:gap-1 text-center rounded-md bg-gray-50 shadow-md py-3 md:py-6 px-2">
               <?php if($name):?>
-                <h3 class="heading-7 text-blue-2"><?php echo $name;?></h3>
+                <h3 class="font-bold md:heading-7 text-blue-2"><?php echo $name;?></h3>
               <?php endif;?>
               <?php if($title):?>
-                <p class="text-sm"><?php echo $title;?></p>
+                <p class="text-[12px] md:text-sm"><?php echo $title;?></p>
               <?php endif;?>
               <?php if($email):?>
-                <a href="mailto:<?php echo $email;?>" class="flex flex-col text-sm items-center justify-center text-orange-2 hover:underline"><?php echo $email;?></a>
+                <a href="mailto:<?php echo $email;?>" class="flex flex-col text-[11px] md:text-sm items-center justify-center text-orange-2 hover:underline"><?php echo $email;?></a>
               <?php endif;?>
             </div>
           </div>
