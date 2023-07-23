@@ -31,10 +31,10 @@
                 <p class="text-2xl font-bold font-heading text-blue-2"><?php echo $name;?></p>
               <?php endif;?>
               <?php if($subtitle):?>
-                <p class="mb-10 text-lg text-orange-2 font-medium"><?php echo $subtitle;?></p>
+                <p class="mb-6 lg:mb-10 text-lg text-orange-2 font-medium"><?php echo $subtitle;?></p>
               <?php endif;?>
               <?php if($content):?>
-                <div class="mb-8 text-base leading-relaxed text-blue-2 line-clamp-5 <?php echo !$subtitle ? 'mt-8' : '';?>"><?php echo $content;?></div>
+                <div class="mb-6 lg:mb-8 text-base leading-relaxed text-blue-2 line-clamp-5 <?php echo !$subtitle ? 'mt-6 lg:mt-10' : '';?>"><?php echo $content;?></div>
               <?php endif;?>
               <button class="mb-3 button" @click="open = true">Read <?php echo $name;?> Story</button>
             </div>

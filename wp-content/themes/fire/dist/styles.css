@@ -3268,6 +3268,12 @@ a{
   .lg\:mb-0{
     margin-bottom: 0px;
   }
+  .lg\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+  .lg\:mb-8{
+    margin-bottom: 2rem;
+  }
   .lg\:mb-gap-0{
     margin-bottom: 0;
   }
@@ -3291,6 +3297,9 @@ a{
   }
   .lg\:mt-0{
     margin-top: 0px;
+  }
+  .lg\:mt-10{
+    margin-top: 2.5rem;
   }
   .lg\:mt-gap-0{
     margin-top: 0;
