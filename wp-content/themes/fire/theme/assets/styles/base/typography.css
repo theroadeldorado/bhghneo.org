@@ -65,8 +65,8 @@
     @apply p-4 max-w-[1000px] mx-auto;
   }
 
-  [data-color='orange'] a {
-    @apply !text-white;
+  [data-color='orange'] a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline) {
+    @apply text-white;
   }
 
   .prose,

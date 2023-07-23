@@ -716,9 +716,9 @@ h1,
   max-width: 1000px;
   padding: 1rem;
 }
-[data-color='orange'] a{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+[data-color='orange'] a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .prose p,
     .prose h1,
