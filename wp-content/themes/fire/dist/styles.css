@@ -3045,6 +3045,9 @@ a{
   }
 }
 @media (min-width: 768px){
+  .md\:relative{
+    position: relative;
+  }
   .md\:top-0{
     top: 0px;
   }

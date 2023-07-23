@@ -16,7 +16,7 @@
     <div class="grid md:grid-cols-2 gap-10 md:gap-20">
       <div class="row-start-1 md:row-start-1 <?php echo $image_on_right ? 'md:col-start-2' : 'md:col-start-1';?>">
         <?php if($image): ?>
-          <div class=" aspect-w-4 aspect-h-3 md:aspect-none h-full w-full overflow-hidden rounded-md relative md:min-h-[340px]">
+          <div class=" aspect-w-4 aspect-h-3 md:relative md:aspect-none h-full w-full overflow-hidden rounded-md relative md:min-h-[340px]">
             <?php new Fire_Picture($image['url'], $image['alt'], [[900,600],[900,600],[900,600]], 'object-cover w-full h-full absolute inset-0');?>
           </div>
         <?php endif; ?>
