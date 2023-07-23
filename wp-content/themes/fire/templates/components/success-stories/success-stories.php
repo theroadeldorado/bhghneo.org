@@ -36,7 +36,7 @@
               <?php if($content):?>
                 <div class="mb-6 lg:mb-8 text-base leading-relaxed text-blue-2 line-clamp-5 <?php echo !$subtitle ? 'mt-6 lg:mt-10' : '';?>"><?php echo $content;?></div>
               <?php endif;?>
-              <button class="mb-3 button" @click="open = true">Read <?php echo $name;?> Story</button>
+              <button class="mb-3 button" @click="open = true">Read <?php echo $name;?>'s Story</button>
             </div>
             <div class="duration-1000 ease-in-out block row-start-1 transition" :class="{'translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
               <?php if($image): ?>
