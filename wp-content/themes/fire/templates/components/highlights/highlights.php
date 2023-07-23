@@ -60,6 +60,7 @@
                   class="w-full p-4 relative duration-300 ease-in-out transition"
                   @mouseover="active = <?php echo $image_counter;?>"
                   :class="{'lg:opacity-50': active !== <?php echo $image_counter;?>}"
+                  href="<?php echo $optional_link['url'];?>" target="<?php echo $optional_link['target'];?>"
                 >
               <?php else:?>
                 <div
