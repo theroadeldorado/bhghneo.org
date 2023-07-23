@@ -21,7 +21,7 @@ $bugherd_enabled = get_field('bugherd_enabled', 'site_settings');
     <div class="container">
       <div class="flex flex-wrap items-center justify-between">
         <div class="w-full lg:w-auto mb-8 shrink-0 lg:mb-0 flex justify-center lg:block">
-          <div class="flex flex-col justify-center md:flex-row md:justify-start items-center gap-6 mb-2">
+          <div class="flex flex-col md:items-start justify-center md:flex-row md:justify-start items-center gap-6 mb-2">
             <a class="text-2xl leading-none text-gray-600 shrink-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
               <span class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-white border-4 border-white rounded-full"><?php new Fire_SVG('logo'); ?></span>
               <span class="sr-only"><?php bloginfo( 'name' ); ?></span>
@@ -31,7 +31,7 @@ $bugherd_enabled = get_field('bugherd_enabled', 'site_settings');
                 <h4 class="mb-1 heading-4 text-white"><?php echo $title;?></h4>
               <?php endif; ?>
               <?php if($address) : ?>
-                <div class="text-sm text-white">
+                <div class="text-sm text-white wizzy">
                   <?php echo $address;?>
                 </div>
               <?php endif; ?>
