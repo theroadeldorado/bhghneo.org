@@ -717,8 +717,8 @@ h1,
   padding: 1rem;
 }
 [data-color='orange'] a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline){
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 .prose p,
     .prose h1,
@@ -2426,7 +2426,7 @@ a{
 }
 .border-yellow{
   --tw-border-opacity: 1;
-  border-color: rgb(252 225 0 / var(--tw-border-opacity));
+  border-color: rgb(255 179 13 / var(--tw-border-opacity));
 }
 .bg-black{
   --tw-bg-opacity: 1;
@@ -2472,7 +2472,7 @@ a{
 }
 .bg-yellow{
   --tw-bg-opacity: 1;
-  background-color: rgb(252 225 0 / var(--tw-bg-opacity));
+  background-color: rgb(255 179 13 / var(--tw-bg-opacity));
 }
 .object-contain{
   -o-object-fit: contain;

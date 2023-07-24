@@ -66,7 +66,7 @@
   }
 
   [data-color='orange'] a:not(.button, .button-outline, .button-white, .button-blue, .button-white-outline, .button-blue-outline) {
-    @apply text-white;
+    @apply !text-white;
   }
 
   .prose,

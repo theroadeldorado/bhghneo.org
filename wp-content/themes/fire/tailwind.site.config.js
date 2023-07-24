@@ -43,7 +43,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        yellow: '#fce100',
+        yellow: '#ffb30d',
         orange: {
           1: '#F68B11',
           2: '#F36917',
