@@ -13,10 +13,7 @@
       $content = get_sub_field('description');
       $color = get_sub_field('color');
       ?>
-
       <?php if($title && $content):?>
-
-
         <div class="flex flex-col items-start justify-start group">
           <button @click="activeAccordion = <?php echo $counter;?>" class="p-3  hover:opacity-75 <?php echo $color;?> heading-6 cursor-pointer z-10 flex gap-4 w-full text-left justify-between items-center <?php echo $color === 'bg-yellow' ? 'text-blue-2' : 'text-white';?>">
             <span><?php echo $title; ?></span>
