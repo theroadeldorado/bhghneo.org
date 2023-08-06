@@ -43,7 +43,7 @@
         <?php new Fire_Heading($tag, $heading, $style) ?>
       <?php endif; ?>
       <?php if($copy): ?>
-        <div class="body-lg mb-8">
+        <div class="body-lg mb-8 font-medium">
           <?php echo $copy;?>
         </div>
       <?php endif; ?>
