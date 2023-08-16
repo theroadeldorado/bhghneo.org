@@ -46,6 +46,9 @@
     if ($style === 'button-white') {
       $atts['class'] = $style. ' block w-full lg:mt-0 mt-4 border-2 border-white px-[24px] pt-[16px] pb-[17px] text-[24px] lg:px-[18px] lg:pt-[14px] lg:pb-[15px] lg:text-[14px]';
     }
+    if ($style === 'button-blue') {
+      $atts['class'] = $style. ' block w-full lg:mt-0 mt-4 border-2 border-blue-2 text-white bg-blue-2 px-[24px] pt-[16px] pb-[17px] text-[24px] lg:px-[18px] lg:pt-[14px] lg:pb-[15px] lg:text-[14px] hover:text-blue-2 hover:bg-white hover:border-white ';
+    }
     if ($style === 'button-white-outline') {
       $atts['class'] = $style. ' before:bg-white hover:bg-white hover:text-orange-2 block w-full lg:mt-0 mt-4 border-2 border-white px-[24px] pt-[16px] pb-[17px] text-[24px] lg:px-[18px] lg:pt-[14px] lg:pb-[15px] lg:text-[14px]';
     }

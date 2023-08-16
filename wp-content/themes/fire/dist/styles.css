@@ -2993,6 +2993,10 @@ a{
   background-color: rgb(243 105 23 / var(--tw-bg-opacity));
 }
 @media (hover: hover) and (pointer: fine){
+  .hover\:border-white:hover{
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
   .hover\:bg-orange-2\/40:hover{
     background-color: rgb(243 105 23 / 0.4);
   }
