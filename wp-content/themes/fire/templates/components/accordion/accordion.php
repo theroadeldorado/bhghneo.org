@@ -24,7 +24,7 @@
             </div>
           </button>
           <div class="relative w-full overflow-hidden group-last:border-b <?php echo $color === 'bg-yellow' ? 'border-yellow' : '';?> <?php echo $color === 'bg-blue-2' ? 'border-blue-2' : '';?> <?php echo $color === 'bg-orange-2' ? 'border-orange-2' : '';?>" x-show="activeAccordion === <?php echo $counter; ?>" x-collapse>
-            <div  class="p-6 w-full body-md">
+            <div  class="p-6 w-full body-md wizzy">
               <?php echo $content; ?>
             </div>
           </div>
