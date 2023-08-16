@@ -48,3 +48,14 @@
     @apply p-2 text-white bg-black;
   }
 }
+
+.full-width-image .scroll-image {
+  @apply h-[250px] md:h-[350px] lg:h-[400px] w-auto;
+  svg,
+  img,
+  picture,
+  object,
+  embed {
+    @apply h-[250px] md:h-[350px] lg:h-[400px] w-auto;
+  }
+}

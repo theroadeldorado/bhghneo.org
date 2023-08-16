@@ -2,6 +2,7 @@
   $heading = get_sub_field('heading');
   $image = get_sub_field('image');
   $tag = get_sub_field('tag');
+  $copy = get_sub_field('copy');
   $style = get_sub_field('style') ? get_sub_field('style') : '';
   $stories = get_sub_field('stories');
   $counter = 0;
@@ -15,8 +16,12 @@
   <div class="container" x-data="success<?php echo $section->count;?>()">
 
     <?php if($heading): ?>
-      <?php new Fire_Heading($tag, $heading, $style.' text-center text-orange-2 mb-12') ?>
+      <?php new Fire_Heading($tag, $heading, $style.' text-center text-orange-2 mb-8') ?>
     <?php endif; ?>
+
+    <?php if($copy):?>
+      <div class="mb-12 text-center max-w-2xl mx-auto text-xl font-medium"><?php echo $copy;?></div>
+    <?php endif;?>
 
     <?php if( $stories ): ?>
       <div class="grid grid-cols-1">
