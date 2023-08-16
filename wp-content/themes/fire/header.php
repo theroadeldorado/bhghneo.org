@@ -81,7 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="fixed flex items-start w-screen h-screen duration-200 ease-in-out transition-opacity z-[1001] inset-0 main-navigation lg:hidden bg-orange-2"
             :class="{'opacity-0 pointer-events-none': !navOpen}"
           >
-            <nav class="w-full px-4 pt-24 pb-24 overflow-y-auto no-scrollbar">
+            <nav class="block w-full pt-24 pb-24 h-full overflow-x-hidden overflow-y-scroll no-scrollbar">
 
                 <?php
                   wp_nav_menu(
@@ -89,9 +89,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       'container'       => false,
                       'depth'           => 2,
                       'theme_location'  => 'primary',
-                      'menu_class'      => 'list-none [&>li]:text-center [&>li]:w-full block [&>li]:block space-y-4',
-                      'link_class'      => 'block text-white font-medium text-[24px] leading-0 tracking-[0.02em] w-full no-underline py-2 hover:no-underline ',
-                      'sub_link_class' => 'block text-white font-medium text-[14px] leading-0 w-full no-underline py-0.5 hover:no-underline',
+                      'menu_class'      => 'list-none px-4 [&>li]:text-center [&>li]:w-full block [&>li]:block space-y-4',
+                      'link_class'      => 'block text-white font-medium text-[24px] leading-none tracking-[0.02em] w-full no-underline py-2 hover:no-underline ',
+                      'sub_link_class' => 'block text-white font-medium text-[14px] leading-none w-full no-underline py-1 hover:no-underline',
                       'sub_menu_class' => 'block',
                     )
                   );

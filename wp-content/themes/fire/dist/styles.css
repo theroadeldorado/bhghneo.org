@@ -1733,10 +1733,8 @@ button{
 }
 a{
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(229 231 235 / var(--tw-text-opacity));
   text-decoration-line: none;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
   cursor: pointer;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1747,36 +1745,6 @@ a:focus-visible {
     }
 a{
     -webkit-tap-highlight-color: transparent;
-}
-.link{
-  display: inline-flex;
-  align-items: center;
-  font-family: Open Sans, Arial, sans-serif;
-  line-height: 1;
-  letter-spacing: 0.025em;
-  text-decoration-line: none;
-  cursor: pointer;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
-.link svg{
-  width: 1rem;
-}
-.link svg:first-child{
-  margin-right: 0.5rem;
-}
-.link svg:last-child{
-  margin-left: 0.5rem;
-}
-.link-primary{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-.link-primary:hover,
-      .link-primary:active{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .sr-only{
   position: absolute;
@@ -2391,8 +2359,8 @@ a{
 .overflow-hidden{
   overflow: hidden;
 }
-.overflow-y-auto{
-  overflow-y: auto;
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 .overflow-x-scroll{
   overflow-x: scroll;
@@ -2517,13 +2485,9 @@ a{
   padding-left: 24px;
   padding-right: 24px;
 }
-.py-0{
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.py-0\.5{
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .py-10{
   padding-top: 2.5rem;
