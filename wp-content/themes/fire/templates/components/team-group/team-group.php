@@ -32,7 +32,7 @@
                 <p class="text-[12px] md:text-sm"><?php echo $title;?></p>
               <?php endif;?>
               <?php if($phone_number_extension):?>
-                <span class="flex flex-col text-[11px] md:text-sm items-center justify-center"><?php echo $phone_number_extension;?></span>
+                <span class="flex flex-col text-[11px] md:text-sm items-center justify-center text-blue-2"><?php echo $phone_number_extension;?></span>
               <?php endif;?>
               <?php if($email):?>
                 <a href="mailto:<?php echo $email;?>" class="flex flex-col text-[11px] md:text-sm items-center justify-center text-orange-2 hover:underline"><?php echo $email;?></a>
