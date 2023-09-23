@@ -27,32 +27,32 @@
       <div class="grid grid-cols-1 grid-rows-1">
         <?php foreach( $stories as $story ):
           $content = get_field( 'story', $story->ID );
+          // strip tags from content
+          $content = strip_tags($content);
           $name = get_field( 'name', $story->ID );
           $subtitle = get_field( 'subtitle', $story->ID );
           $image = get_field( 'image', $story->ID );?>
           <div
-            class="grid gap-10 md:gap-20 md:grid-cols-2 row-start-1 col-start-1"
-            :class="{'pointer-events-none opacity-0': active !== <?php echo $counter;?>}"
             x-data="{open: false}"
+            class="col-start-1 row-start-1 col-span-1 row-span-1 grid gap-10 md:gap-20 md:grid-cols-2"
+            :class="active !== <?php echo $counter;?> && 'pointer-events-none'"
           >
-            <div
-              class="duration-1000 ease-in-out block transition row-start-2 md:row-start-1 -translate-x-20 opacity-0"
-              :class="{'!translate-x-0 !opacity-100': active === <?php echo $counter;?>}">
+            <div class="duration-1000 ease-in-out transition row-start-2 md:row-start-1" :class="active !== <?php echo $counter;?> && 'translate-x-20 opacity-0'">
               <?php if($name):?>
-                <p class="text-2xl font-bold font-heading text-blue-2"><?php echo $name;?></p>
+                <p class="text-2xl font-bold font-heading text-blue-2 <?php echo !$subtitle ? 'mb-6 lg:mb-10' : '';?>"><?php echo $name;?></p>
               <?php endif;?>
               <?php if($subtitle):?>
                 <p class="mb-6 lg:mb-10 text-lg text-orange-2 font-medium"><?php echo $subtitle;?></p>
               <?php endif;?>
               <?php if($content):?>
-                <div class="mb-6 lg:mb-8 text-base leading-relaxed text-blue-2 line-clamp-5 <?php echo !$subtitle ? 'mt-6 lg:mt-10' : '';?>"><?php echo $content;?></div>
+                <div class="mb-6 lg:mb-8 text-base leading-relaxed text-blue-2 line-clamp-5"><?php echo $content;?></div>
               <?php endif;?>
               <button class="mb-3 button" @click="open = true">Read <?php echo $name;?>'s Story</button>
             </div>
 
-            <div class="duration-1000 ease-in-out block row-start-1 transition" :class="{'translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
+            <div class="duration-1000 ease-in-out block transition row-start-1" :class="active !== <?php echo $counter;?> && '-translate-x-20 opacity-0'">
               <?php if($image): ?>
-                <div class="aspect-w-7 aspect-h-5 w-full overflow-hidden rounded-md ">
+                <div class="aspect-w-7 aspect-h-5 w-full overflow-hidden rounded-md relative">
                   <?php new Fire_Picture($image['url'], $image['alt'], [[700,500],[700,500],[700,500]], 'object-cover w-full h-full absolute inset-0');?>
                 </div>
               <?php endif; ?>
