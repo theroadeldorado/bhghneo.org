@@ -37,7 +37,7 @@
             class="col-start-1 row-start-1 col-span-1 row-span-1 grid gap-10 md:gap-20 md:grid-cols-2"
             :class="active !== <?php echo $counter;?> && 'pointer-events-none'"
           >
-            <div class="duration-1000 ease-in-out transition row-start-2 md:row-start-1" :class="active !== <?php echo $counter;?> && 'translate-x-20 opacity-0'">
+            <div class="duration-1000 ease-in-out transition row-start-2 md:row-start-1" :class="active !== <?php echo $counter;?> && '-translate-x-20 opacity-0'">
               <?php if($name):?>
                 <p class="text-2xl font-bold font-heading text-blue-2 <?php echo !$subtitle ? 'mb-6 lg:mb-10' : '';?>"><?php echo $name;?></p>
               <?php endif;?>
@@ -50,7 +50,7 @@
               <button class="mb-3 button" @click="open = true">Read <?php echo $name;?>'s Story</button>
             </div>
 
-            <div class="duration-1000 ease-in-out block transition row-start-1" :class="active !== <?php echo $counter;?> && '-translate-x-20 opacity-0'">
+            <div class="duration-1000 ease-in-out block transition row-start-1" :class="active !== <?php echo $counter;?> && 'translate-x-20 opacity-0'">
               <?php if($image): ?>
                 <div class="aspect-w-7 aspect-h-5 w-full overflow-hidden rounded-md relative">
                   <?php new Fire_Picture($image['url'], $image['alt'], [[700,500],[700,500],[700,500]], 'object-cover w-full h-full absolute inset-0');?>
