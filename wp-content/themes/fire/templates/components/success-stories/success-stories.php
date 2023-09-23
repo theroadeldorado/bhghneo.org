@@ -28,7 +28,7 @@
         <?php foreach( $stories as $story ):
           $content = get_field( 'story', $story->ID );
           // strip tags from content
-          $content = strip_tags($content);
+          $content_no_tags = strip_tags($content);
           $name = get_field( 'name', $story->ID );
           $subtitle = get_field( 'subtitle', $story->ID );
           $image = get_field( 'image', $story->ID );?>
@@ -44,8 +44,8 @@
               <?php if($subtitle):?>
                 <p class="mb-6 lg:mb-10 text-lg text-orange-2 font-medium"><?php echo $subtitle;?></p>
               <?php endif;?>
-              <?php if($content):?>
-                <div class="mb-6 lg:mb-8 text-base leading-relaxed text-blue-2 line-clamp-5"><?php echo $content;?></div>
+              <?php if($content_no_tags):?>
+                <div class="mb-6 lg:mb-8 text-base leading-relaxed text-blue-2 line-clamp-5"><?php echo $content_no_tags;?></div>
               <?php endif;?>
               <button class="mb-3 button" @click="open = true">Read <?php echo $name;?>'s Story</button>
             </div>
