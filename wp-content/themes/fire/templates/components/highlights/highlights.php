@@ -6,7 +6,7 @@
 ?>
 
 <?php $section->start(); ?>
-   <div class="container" x-data="highlights<?php echo $section->count;?>()">
+  <div class="container" x-data="highlights<?php echo $section->count;?>()">
     <div class="flex flex-wrap -mx-4">
       <div class="w-full pl-4 pr-10 mb-12 lg:w-1/3 lg:mb-0">
         <?php if( have_rows('highlights') ): $counter = 0;?>

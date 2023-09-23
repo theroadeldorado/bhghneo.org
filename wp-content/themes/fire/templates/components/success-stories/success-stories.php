@@ -24,14 +24,20 @@
     <?php endif;?>
 
     <?php if( $stories ): ?>
-      <div class="grid grid-cols-1">
+      <div class="grid grid-cols-1 grid-rows-1">
         <?php foreach( $stories as $story ):
           $content = get_field( 'story', $story->ID );
           $name = get_field( 'name', $story->ID );
           $subtitle = get_field( 'subtitle', $story->ID );
           $image = get_field( 'image', $story->ID );?>
-          <div x-cloak class="grid gap-10 md:gap-20 md:grid-cols-2 row-start-1 col-start-1" :class="{'pointer-events-none': active !== <?php echo $counter;?>}" x-data="{open: false}">
-            <div class="duration-1000 ease-in-out block transition row-start-2 md:row-start-1" :class="{'-translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
+          <div
+            class="grid gap-10 md:gap-20 md:grid-cols-2 row-start-1 col-start-1"
+            :class="{'pointer-events-none opacity-0': active !== <?php echo $counter;?>}"
+            x-data="{open: false}"
+          >
+            <div
+              class="duration-1000 ease-in-out block transition row-start-2 md:row-start-1 -translate-x-20 opacity-0"
+              :class="{'!translate-x-0 !opacity-100': active === <?php echo $counter;?>}">
               <?php if($name):?>
                 <p class="text-2xl font-bold font-heading text-blue-2"><?php echo $name;?></p>
               <?php endif;?>
@@ -43,6 +49,7 @@
               <?php endif;?>
               <button class="mb-3 button" @click="open = true">Read <?php echo $name;?>'s Story</button>
             </div>
+
             <div class="duration-1000 ease-in-out block row-start-1 transition" :class="{'translate-x-20 opacity-0': active !== <?php echo $counter;?>}">
               <?php if($image): ?>
                 <div class="aspect-w-7 aspect-h-5 w-full overflow-hidden rounded-md ">

@@ -14,7 +14,7 @@
         <div class="w-full px-4 mb-4 text-center lg:w-1/3 lg:mb-0">
           <?php if($icon):?>
             <span class="flex items-center justify-center w-20 h-20 mb-3 p-5 mx-auto bg-white rounded-full">
-              <?php new Fire_Picture($icon['url'], $icon['alt'], [[80,null],[80,null],[80,null]], 'w-full object-contain');?>
+              <img src="<?php echo $icon['url'];?>" alt="<?php echo $icon['alt'];?>" class="w-full h-full object-contain">
             </span>
           <?php endif;?>
           <?php if($stat):?>
